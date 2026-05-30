@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraX CyberSecurity | Política de Privacidade</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#07130D', card: '#101010', green: '#00C853', text: '#EAEAEA', muted: '#9CA3AF'
+                        }
+                    },
+                    fontFamily: { sans: ['"Space Grotesk"', 'sans-serif'] },
+                    backgroundImage: { 'grid-pattern': "linear-gradient(to right, #00C85310 1px, transparent 1px), linear-gradient(to bottom, #00C85310 1px, transparent 1px)" }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-cyber-bg text-cyber-text font-sans min-h-screen flex flex-col relative selection:bg-cyber-green selection:text-black antialiased">
+
+    <!-- Background Elements -->
+    <div class="fixed inset-0 bg-grid-pattern bg-[size:40px_40px] opacity-20 pointer-events-none"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-cyber-green rounded-full blur-[200px] opacity-5 pointer-events-none"></div>
+
+    <!-- Navbar Simplificada -->
+    <nav class="relative z-50 w-full pt-8 px-6 mb-8">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="/assets/img/logo-escrit.png" alt="AuraX Logo" class="h-16 transition-transform group-hover:scale-105">
+            </div>
+            <a href="index.html" class="flex items-center gap-2 text-sm text-cyber-muted hover:text-cyber-green transition-colors group">
+                <i data-feather="arrow-left" class="w-4 h-4 transition-transform group-hover:-translate-x-1"></i>
+                Retornar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Legal -->
+    <main class="flex-grow relative z-10 px-6 pb-20">
+        <div class="max-w-4xl mx-auto bg-cyber-card/80 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl">
+            
+            <div class="mb-10 border-b border-white/10 pb-6">
+                <h1 class="text-3xl md:text-4xl font-bold mb-3">Política de <span class="text-cyber-green">Privacidade</span></h1>
+                <p class="text-sm font-mono text-cyber-muted flex items-center gap-2">
+                    <i data-feather="calendar" class="w-4 h-4"></i> Última atualização: Maio de 2026
+                </p>
+            </div>
+
+            <div class="space-y-8 text-cyber-muted leading-relaxed text-sm md:text-base">
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3 flex items-center gap-2"><i data-feather="lock" class="w-5 h-5 text-cyber-green"></i> 1. O Nosso Compromisso</h2>
+                    <p>A AuraX CyberSecurity trata a privacidade e a proteção de dados com rigor militar. Como uma consultoria especializada em Segurança Ofensiva, entendemos que as informações compartilhadas conosco são de caráter estritamente confidencial. Esta política descreve como coletamos, usamos e protegemos os seus dados.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">2. Dados Coletados</h2>
+                    <p>Durante a interação com nossa infraestrutura ou contratação de serviços, podemos coletar:</p>
+                    <ul class="list-disc list-inside mt-3 space-y-2 ml-2">
+                        <li><strong>Dados de Contato:</strong> Nome, e-mail corporativo, telefone e cargo.</li>
+                        <li><strong>Dados de Escopo (Operacional):</strong> Topologias de rede, endereços IP, domínios e artefatos necessários exclusivamente para a execução de Testes de Invasão (Pentest).</li>
+                        <li><strong>Logs de Acesso:</strong> Dados analíticos básicos de navegação (Google Analytics) para melhoria contínua da nossa plataforma.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">3. Uso das Informações e Sigilo (NDA)</h2>
+                    <p>Todos os dados coletados são utilizados exclusivamente para o planejamento, execução e reporte das atividades de cibersegurança contratadas. A AuraX opera sob acordos rigorosos de confidencialidade (NDA - Non-Disclosure Agreement). Sob nenhuma circunstância vendemos, alugamos ou compartilhamos dados de clientes ou artefatos de exploração com terceiros não autorizados.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">4. Destruição Segura de Evidências</h2>
+                    <p>Após a conclusão de um engajamento (Pentest ou Análise de Vulnerabilidades) e a entrega final do relatório ao cliente, todas as evidências de falhas, *payloads* customizados, *dumps* de dados e credenciais obtidas durante o teste são permanentemente destruídas de nossos cofres criptografados através de processos de sanitização digital (Wipe), seguindo as melhores práticas do setor.</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-bold text-white mb-3">5. Contato do DPO</h2>
+                    <p>Para dúvidas sobre privacidade ou requisições de exclusão de dados, entre em contato através do canal oficial: <br>
+                    <a href="mailto:dpo@auraxcyber.com.br" class="text-cyber-green hover:underline mt-2 inline-block font-mono">dpo@auraxcyber.com.br</a></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>feather.replace();</script>
+</body>
+</html>
